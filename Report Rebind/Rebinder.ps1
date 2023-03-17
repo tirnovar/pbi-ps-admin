@@ -1,5 +1,17 @@
+<# REQUIREMENTS #>
 #Requires -Modules @{ ModuleName="MicrosoftPowerBIMgmt"; ModuleVersion="1.2.1077" }
 
+<#
+  _____        _          ____            _   _                   
+ |  __ \      | |        |  _ \          | | | |                  
+ | |  | | __ _| |_ __ _  | |_) |_ __ ___ | |_| |__   ___ _ __ ___ 
+ | |  | |/ _` | __/ _` | |  _ <| '__/ _ \| __| '_ \ / _ \ '__/ __|
+ | |__| | (_| | || (_| | | |_) | | | (_) | |_| | | |  __/ |  \__ \
+ |_____/ \__,_|\__\__,_| |____/|_|  \___/ \__|_| |_|\___|_|  |___/                                                              
+
+#>
+
+<# FUNCTIONS #>
 function Post-Rebind {
     param(
         [string]$dataset,
@@ -18,7 +30,8 @@ function Post-Rebind {
     }
     
 }
-    
+
+<# PROMPT #>
 function ShowPrompt() {
     while ($true) {
         while ($true) {
@@ -67,5 +80,6 @@ function ShowPrompt() {
         Post-Rebind -dataset $targetDatasetId -group $targetGroupId -report $targetReportId
     }
 }
-    
-ShowPrompt -Verbose
+
+<# START OF CODE #>
+ShowPrompt
