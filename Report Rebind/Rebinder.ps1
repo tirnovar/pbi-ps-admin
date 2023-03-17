@@ -68,5 +68,4 @@ function ShowPrompt() {
     }
 }
     
-ShowPrompt 
-    
+ShowPrompt -Verbose
