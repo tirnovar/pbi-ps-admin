@@ -1,6 +1,3 @@
-<# REQUIREMENTS #>
-#Requires -Modules @{ ModuleName="MicrosoftPowerBIMgmt"; ModuleVersion="1.2.1077" }
-
 <#
   _____        _          ____            _   _                   
  |  __ \      | |        |  _ \          | | | |                  
@@ -10,6 +7,9 @@
  |_____/ \__,_|\__\__,_| |____/|_|  \___/ \__|_| |_|\___|_|  |___/                                                              
 
 #>
+
+<# REQUIREMENTS #>
+#Requires -Modules @{ ModuleName="MicrosoftPowerBIMgmt"; ModuleVersion="1.2.1077" }
 
 <# FUNCTIONS #>
 function Post-Rebind {
