@@ -67,12 +67,12 @@ function ShowPrompt() {
     }
     
     $targetGroupId = Read-Host -Prompt "Enter group (workspace) ID"
-    if (!$targetDatasetId) {
+    if (!$targetGroupId) {
         Write-Error "Invalid group id"
     }
     
     $targetReportId = Read-Host -Prompt "Enter report ID"
-    if (!$targetDatasetId) {
+    if (!$targetReportId) {
         Write-Error "Invalid report id"
     }
         
